@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./src/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/index.css">
+</head>
+<body>
+    <!-- <a href="#main">Jump to the form</a> -->
+    <main id="main">
+        <h1>FreeCodeCamp Survey Form</h1>
+        <p>Thank you for taking the time to help us improve the platform.</p>
+        <form action="">
+            <label for="name">Name:</label>
+            <input id="name" name="name" type="text" required>
+            <label for="email">E-mail:</label>
+            <input id="email" type="email" name="email" required>
+            <label for="age">Age (optional):</label>
+            <input id="age" type="text" name="age">
+            <label for="occupation">Which option best describes your current role?</label>
+            <input id="occupation" type="range" name="occupation">
+            <label for="recommendation">Would you recommend FreeCodeCamp to a friend?</label>
+            <input id="recomendation" type="radio" name="recommendation" checked><p>Definitely</p>
+            <input id="recomendation" type="radio" name="recommendation"><p>Maybe</p>
+            <input id="recomendation" type="radio" name="recommendation"><p>Not Sure</p>
+            <label for="preference">What is your favorite feature of FreeCodeCamp?</label>
+            <input id="preference" type="range" name="preference">
+            <label for="improvement">What would you like to see improved?</label>
+            <input id="improvement" type="checkbox" name="improvement"><p>Front-end Projects</p>
+            <input id="improvement" type="checkbox" name="improvement"><p>Back-end Projects</p>
+            <input id="improvement" type="checkbox" name="improvement"><p>Data Visualization</p>
+            <input id="improvement" type="checkbox" name="improvement"><p>Challenges</p>
+            <input id="improvement" type="checkbox" name="improvement"><p>Open Source Community</p>
+            <input id="improvement" type="checkbox" name="improvement"><p>Gitter Help Rooms</p>
+            <input id="improvement" type="checkbox" name="improvement"><p>Videos</p>
+            <input id="improvement" type="checkbox" name="improvement"><p>City Meetups</p>
+            <input id="improvement" type="checkbox" name="improvement"><p>Wiki</p>
+            <input id="improvement" type="checkbox" name="improvement"><p>Forum</p>
+            <input id="improvement" type="checkbox" name="improvement"><p>Additional Courses</p>
+            <label for="suggestion"></label>
+            <input id="suggestion" type="text" name="suggestion">
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
