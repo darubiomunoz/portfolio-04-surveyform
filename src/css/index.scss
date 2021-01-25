@@ -1,1 +1,11 @@
+@import "./lib/mixins.scss";
+@import "./lib/variables.scss";
+@import "./lib/layout.scss";
 @import "./lib/globals.scss";
+
+@import "./components/titles.scss";
+@import "./components/tags.scss";
+@import "./components/fields.scss";
+@import "./components/forms.scss";
+@import "./components/selections.scss";
+@import "./components/buttons.scss";

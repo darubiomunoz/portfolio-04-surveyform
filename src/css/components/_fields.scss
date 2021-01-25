@@ -1,0 +1,8 @@
+.field--form {
+    @include border-style;
+    @include box-model-style;
+}
+
+.field--textarea {
+    width: 100%;
+}

@@ -1,0 +1,4 @@
+.selection {
+    @include border-style;
+    @include box-model-style;    
+}

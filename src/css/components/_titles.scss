@@ -1,0 +1,13 @@
+.title--form {
+    @include background-style;
+
+    padding: 1rem;
+    text-align: center;
+    font-family: $font-secundary;
+    font-size: 2.5rem;
+    color: $color-dark;
+}
+.subtitle--form {
+    @extend .title--form;
+    font-size: 1.4rem;
+}

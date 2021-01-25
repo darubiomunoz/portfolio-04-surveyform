@@ -1,0 +1,14 @@
+@mixin background-style {
+    border-radius: $border-radius;
+    background-color: rgba($color-clair, 0.6);
+}
+
+@mixin border-style {
+    border: none;
+    border-radius: $border-radius / 2;
+}
+
+@mixin box-model-style {
+    margin-top: 1rem;
+    padding: .5rem;
+}

@@ -9,27 +9,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/index.css">
 </head>
-<body>
+<body class="body">
     <!-- <a href="#main">Jump to the form</a> -->
-    <main id="main">
-        <h1>FreeCodeCamp Survey Form</h1>
-        <h2>Thank you for taking the time to help us improve the platform.</h2>
-        <form action="" method="POST">
-            <div>
-                <label for="name">Name:</label>
-                <input id="name" name="name" type="text" required>
+    <main id="main" class="main">
+        <h1 class="title--form">FreeCodeCamp Survey Form</h1>
+        <h2 class="subtitle--form">Thank you for taking the time to help us improve the platform.</h2>
+        <form class="form flex" action="#">
+            <div class="form__name">
+                <label class="tag--form" for="name">Name:</label>
+                <input class="field--form" id="name" name="name" type="text" required>
             </div>
-            <div>
-                <label for="email">E-mail:</label>
-                <input id="email" type="email" name="email" required>
+            <div class="form__email">
+                <label class="tag--form" for="email">E-mail:</label>
+                <input id="email" class="field--form" type="email" name="email" required>
             </div>
-            <div>
-                <label for="age">Age (optional):</label>
-                <input id="age" type="number" name="age">
+            <div class="form__age">
+                <label class="tag--form" for="age">Age (optional):</label>
+                <input id="age" class="field--form" type="number" name="age">
             </div>
-            <div>
-                <label for="occupation">Which option best describes your current role?</label>
-                <select id="occupation" name="occupation" size="1" required>
+            <div class="form__occupation">
+                <label class="tag--form" for="occupation">Which option best describes your current role?</label>
+                <select id="occupation" class="selection" name="occupation" size="1" required>
                     <option disabled selected value>Select current role</option>
                     <option value="Student">Student</option>
                     <option value="Full-time Learner">Full-time Learner</option>
@@ -40,24 +40,24 @@
                     <option value="Other">Other</option>
                 </select>
             </div>
-            <div>
-                <h3>Would you recommend FreeCodeCamp to a friend?</h3>
-                <label for="definitely">
-                    <input id="definitely" type="radio" value="Definitely" name="definitely" checked>
-                    <p>Definitely</p>
+            <div class="form__recommendation">
+                <label class="tag--form">Would you recommend FreeCodeCamp to a friend?</label>
+                <label class="flex" for="definitely">
+                    <input id="definitely" type="radio" value="Definitely" name="recommendation" checked>
+                    <p class="margin-left">Definitely</p>
                 </label>
-                <label for="maybe">
-                    <input id="maybe" type="radio" value="Maybe" name="maybe">
-                    <p>Maybe</p>
+                <label class="flex" for="maybe">
+                    <input id="maybe" type="radio" value="Maybe" name="recommendation">
+                    <p class="margin-left">Maybe</p>
                 </label>
-                <label for="not-sure">
-                    <input id="not-sure" type="radio" value="Not sure" name="not-sure">
-                    <p>Not Sure</p>
+                <label class="flex" for="not-sure">
+                    <input id="not-sure" type="radio" value="Not sure" name="recommendation">
+                    <p class="margin-left">Not Sure</p>
                 </label>
             </div>
-            <div>
-                <label for="preference">What is your favorite feature of FreeCodeCamp?</label>
-                <select id="preference" name="preference" size="1" required>
+            <div class="form__preference">
+                <label class="tag--form" for="preference">What is your favorite feature of FreeCodeCamp?</label>
+                <select id="preference" class="selection" name="preference" size="1" required>
                     <option disabled selected value>Select an option</option>
                     <option value="Challenges">Challenges</option>
                     <option value="Projects">Projects</option>
@@ -65,58 +65,58 @@
                     <option value="open Source">Open Source</option>
                 </select>
             </div>
-            <div>
-                <h3>What would you like to see improved? (check all that apply)</h3>
-                <label for="front-end-projects">
+            <div class="form__improvement">
+                <label class="tag--form">What would you like to see improved? (check all that apply)</label>
+                <label class="flex" for="front-end-projects">
                     <input id="front-end-projects" type="checkbox" value="Front-end Projects" name="front-end-projects">
-                    <p>Front-end Projects</p>
+                    <p class="margin-left">Front-end Projects</p>
                 </label>
-                <label for="back-end-projects">
+                <label class="flex" for="back-end-projects">
                     <input id="back-end-projects" type="checkbox" value="Back-end Projects" name="back-end-projects">
-                    <p>Back-end Projects</p>
+                    <p class="margin-left">Back-end Projects</p>
                 </label>
-                <label for="data-visualization">
+                <label class="flex" for="data-visualization">
                     <input id="data-visualization" type="checkbox" value="Data Visualization" name="data-visualization">
-                    <p>Data Visualization</p>
+                    <p class="margin-left">Data Visualization</p>
                 </label>
-                <label for="challenges">
+                <label class="flex" for="challenges">
                     <input id="challenges" type="checkbox" value="Challenges" name="challenges">
-                    <p>Challenges</p>
+                    <p class="margin-left">Challenges</p>
                 </label>
-                <label for="open-source-community">
+                <label class="flex" for="open-source-community">
                     <input id="open-source-community" type="checkbox" value="Open Source Community" name="open-source-community">
-                    <p>Open Source Community</p>
+                    <p class="margin-left">Open Source Community</p>
                 </label>
-                <label for="gitter-help-rooms">
+                <label class="flex" for="gitter-help-rooms">
                     <input id="gitter-help-rooms" type="checkbox" value="Gitter Help Rooms" name="gitter-help-rooms">
-                    <p>Gitter Help Rooms</p>
+                    <p class="margin-left">Gitter Help Rooms</p>
                 </label>
-                <label for="videos">
+                <label class="flex" for="videos">
                     <input id="videos" type="checkbox" value="Videos" name="videos">
-                    <p>Videos</p>
+                    <p class="margin-left">Videos</p>
                 </label>
-                <label for="city-meetups">
+                <label class="flex" for="city-meetups">
                     <input id="city-meetups" type="checkbox" value="City Meetups" name="city-meetups">
-                    <p>City Meetups</p>
+                    <p class="margin-left">City Meetups</p>
                 </label>
-                <label for="wiki">
+                <label class="flex" for="wiki">
                     <input id="wiki" type="checkbox" value="Wiki" name="wiki">
-                    <p>Wiki</p>
+                    <p class="margin-left">Wiki</p>
                 </label>
-                <label for="forum">
+                <label class="flex" for="forum">
                     <input id="forum" type="checkbox" value="Forum" name="forum">
-                    <p>Forum</p>
+                    <p class="margin-left">Forum</p>
                 </label>
-                <label for="additional-courses">
+                <label class="flex" for="additional-courses">
                     <input id="additional-courses" type="checkbox" value="Additional Courses" name="additional-courses">
-                    <p>Additional Courses</p>
+                    <p class="margin-left">Additional Courses</p>
                 </label>
             </div>
-            <div>
-                <label for="suggestion">Any comments or suggestions?</label>
-                <textarea id="suggestion" name="suggestion" rows="10" cols="80"></textarea>
+            <div class="form__suggestion">
+                <label class="tag--form" for="suggestion">Any comments or suggestions?</label>
+                <textarea id="suggestion" class="field--form field--textarea" name="suggestion" rows="10" cols="25"></textarea>
             </div>
-            <button type="submit">Submit</button>
+            <button class="button--form" type="submit">Submit</button>
         </form>
     </main>
 </body>

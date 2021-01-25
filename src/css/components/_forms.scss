@@ -1,0 +1,46 @@
+.form {
+    @include background-style;
+
+    margin: 2rem 0;
+    padding: 2rem 1rem;
+    flex-direction: column;
+    font-size: 1.4rem;
+
+    &__name {
+        margin-bottom: 1.5rem;
+    }
+
+    &__email {
+        @extend .form__name;
+    }
+
+    &__age {
+        @extend .form__name;
+    }
+
+    &__occupation {
+        @extend .form__name;
+    }
+
+    &__recommendation {
+        @extend .form__name;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__preference {
+        @extend .form__name;
+    }
+
+    &__improvement {
+        @extend .form__name;
+        
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__suggestion {
+        @extend .form__name;
+    }
+}
