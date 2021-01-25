@@ -12,23 +12,23 @@
 <body class="body">
     <!-- <a href="#main">Jump to the form</a> -->
     <main id="main" class="main">
-        <h1 class="title--form">FreeCodeCamp Survey Form</h1>
-        <h2 class="subtitle--form">Thank you for taking the time to help us improve the platform</h2>
+        <h1 class="title--form" tabindex="0">FreeCodeCamp Survey Form</h1>
+        <h2 class="subtitle--form" tabindex="0">Thank you for taking the time to help us improve the platform</h2>
         <form class="form flex" action="#">
             <div class="form__name">
-                <label class="tag--form" for="name">Name:</label>
+                <label class="tag--form" for="name" tabindex="0">Name:</label>
                 <input class="field--form" id="name" name="name" type="text" required>
             </div>
             <div class="form__email">
-                <label class="tag--form" for="email">E-mail:</label>
+                <label class="tag--form" for="email" tabindex="0">E-mail:</label>
                 <input id="email" class="field--form" type="email" name="email" required>
             </div>
             <div class="form__age">
-                <label class="tag--form" for="age">Age (optional):</label>
+                <label class="tag--form" for="age" tabindex="0">Age (optional):</label>
                 <input id="age" class="field--form" type="number" name="age">
             </div>
             <div class="form__occupation">
-                <label class="tag--form" for="occupation">Which option best describes your current role?</label>
+                <label class="tag--form" for="occupation" tabindex="0">Which option best describes your current role?</label>
                 <select id="occupation" class="selection" name="occupation" size="1" required>
                     <option disabled selected value>Select current role</option>
                     <option value="Student">Student</option>
@@ -41,22 +41,22 @@
                 </select>
             </div>
             <div class="form__recommendation">
-                <label class="tag--form">Would you recommend FreeCodeCamp to a friend?</label>
-                <label class="flex" for="definitely">
-                    <input id="definitely" type="radio" value="Definitely" name="recommendation" checked>
+                <label class="tag--form" tabindex="0">Would you recommend FreeCodeCamp to a friend?</label>
+                <label class="flex" for="definitely" tabindex="0">
+                    <input id="definitely" type="radio" value="Definitely" name="recommendation">
                     <p class="margin-left">Definitely</p>
                 </label>
-                <label class="flex" for="maybe">
+                <label class="flex" for="maybe" tabindex="0">
                     <input id="maybe" type="radio" value="Maybe" name="recommendation">
                     <p class="margin-left">Maybe</p>
                 </label>
-                <label class="flex" for="not-sure">
+                <label class="flex" for="not-sure" tabindex="0">
                     <input id="not-sure" type="radio" value="Not sure" name="recommendation">
                     <p class="margin-left">Not Sure</p>
                 </label>
             </div>
             <div class="form__preference">
-                <label class="tag--form" for="preference">What is your favorite feature of FreeCodeCamp?</label>
+                <label class="tag--form" for="preference" tabindex="0">What is your favorite feature of FreeCodeCamp?</label>
                 <select id="preference" class="selection" name="preference" size="1" required>
                     <option disabled selected value>Select an option</option>
                     <option value="Challenges">Challenges</option>
@@ -66,7 +66,7 @@
                 </select>
             </div>
             <div class="form__improvement">
-                <label class="tag--form">What would you like to see improved? (check all that apply)</label>
+                <label class="tag--form" tabindex="0">What would you like to see improved? (check all that apply)</label>
                 <label class="flex" for="front-end-projects">
                     <input id="front-end-projects" type="checkbox" value="Front-end Projects" name="front-end-projects">
                     <p class="margin-left">Front-end Projects</p>
