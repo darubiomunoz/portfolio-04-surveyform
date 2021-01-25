@@ -6,9 +6,9 @@
 @mixin border-style {
     border: none;
     border-radius: $border-radius / 2;
+    background-color: $color-clair;
 }
 
 @mixin box-model-style {
-    margin-top: 1rem;
     padding: .5rem;
 }

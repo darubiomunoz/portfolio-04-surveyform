@@ -1,4 +1,6 @@
 .selection {
     @include border-style;
-    @include box-model-style;    
+    @include box-model-style;
+    
+    font-size: 1.4rem;
 }
