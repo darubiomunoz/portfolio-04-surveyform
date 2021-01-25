@@ -1,0 +1,33 @@
+{
+  "name": "project-04-surveyform",
+  "version": "1.0.0",
+  "description": "------------------------------------------------------------------------------- EN.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darubiomunoz/portfolio-04-surveyform.git"
+  },
+  "keywords": [
+    "Mobile",
+    "First",
+    "Responsive",
+    "Design",
+    "HTML",
+    "Semantic",
+    "HTML",
+    "CSS",
+    "Sass",
+    "BEM",
+    "Screen",
+    "Reader"
+  ],
+  "author": "Diego Rubio <darubiomunoz@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darubiomunoz/portfolio-04-surveyform/issues"
+  },
+  "homepage": "https://github.com/darubiomunoz/portfolio-04-surveyform#readme"
+}
