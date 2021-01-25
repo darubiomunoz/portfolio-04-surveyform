@@ -1,0 +1,15 @@
+.skiplink {
+    @include background-style;
+
+    position: absolute;
+    top: -5rem;
+    padding: 1rem;
+    border: .1rem solid $color2;
+    font-weight: $font-weight-x-bold;
+    font-size: 1.4rem;
+    text-decoration: none;
+
+    &:focus {
+        top: .5rem;
+    }
+}

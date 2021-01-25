@@ -1,4 +1,8 @@
 @media screen and (min-width: 768px) {
+    .skiplink {
+        font-size: 1.8rem;
+    }
+
     .title--form {
         font-size: 4rem;
     }
@@ -17,6 +21,10 @@
     }
 
     .button {
+        font-size: 1.8rem;
+    }
+
+    .footer {
         font-size: 1.8rem;
     }
 }

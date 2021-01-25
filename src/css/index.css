@@ -16,6 +16,10 @@
   outline: none;
 }
 
+a {
+  color: #006496;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -26,9 +30,16 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: url("../assets/images/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -36,9 +47,12 @@ html {
   font-family: "Lato", sans-serif;
 }
 
-.main {
+.main, .footer {
   width: 80%;
   padding: 1rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .title--form, .subtitle--form {
@@ -136,7 +150,40 @@ html {
   border: none;
 }
 
+.footer {
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  font-size: 1.4rem;
+}
+
+.footer__info {
+  font-weight: 600;
+}
+
+.skiplink {
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  top: -5rem;
+  padding: 1rem;
+  border: 0.1rem solid #006496;
+  font-weight: 900;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.skiplink:focus {
+  top: .5rem;
+}
+
 @media screen and (min-width: 768px) {
+  .skiplink {
+    font-size: 1.8rem;
+  }
   .title--form, .subtitle--form {
     font-size: 4rem;
   }
@@ -151,6 +198,9 @@ html {
     font-size: 1.8rem;
   }
   .button {
+    font-size: 1.8rem;
+  }
+  .footer {
     font-size: 1.8rem;
   }
 }

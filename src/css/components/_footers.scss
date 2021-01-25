@@ -1,0 +1,12 @@
+.footer {
+    @extend .main;
+    @include background-style;
+    
+    display: flex;
+    width: auto;
+    font-size: 1.4rem;
+
+    &__info {
+        font-weight: $font-weight-bold;
+    }
+}

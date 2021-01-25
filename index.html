@@ -10,26 +10,26 @@
     <link rel="stylesheet" href="./src/css/index.css">
 </head>
 <body class="body">
-    <!-- <a href="#main">Jump to the form</a> -->
+    <a class="skiplink" href="#subtitle">Jump to the form</a>
     <main id="main" class="main">
         <h1 class="title--form" tabindex="0">FreeCodeCamp Survey Form</h1>
-        <h2 class="subtitle--form" tabindex="0">Thank you for taking the time to help us improve the platform</h2>
-        <form class="form flex" action="#">
+        <h2 id="subtitle" class="subtitle--form" tabindex="0">Thank you for taking the time to help us improve the platform</h2>
+        <form id="form" class="form flex" action="#">
             <div class="form__name">
                 <label class="tag--form" for="name" tabindex="0">Name:</label>
-                <input class="field--form" id="name" name="name" type="text" required>
+                <input class="field--form" id="name" name="name" type="text" aria-label="Type your name" required>
             </div>
             <div class="form__email">
                 <label class="tag--form" for="email" tabindex="0">E-mail:</label>
-                <input id="email" class="field--form" type="email" name="email" required>
+                <input id="email" class="field--form" type="email" name="email" aria-label="Type your email" required>
             </div>
             <div class="form__age">
                 <label class="tag--form" for="age" tabindex="0">Age (optional):</label>
-                <input id="age" class="field--form" type="number" name="age">
+                <input id="age" class="field--form" type="number" name="age" aria-label="Type your age">
             </div>
             <div class="form__occupation">
                 <label class="tag--form" for="occupation" tabindex="0">Which option best describes your current role?</label>
-                <select id="occupation" class="selection" name="occupation" size="1" required>
+                <select id="occupation" class="selection" name="occupation" size="1" aria-label="Select one option with you up and down row buttons" required>
                     <option disabled selected value>Select current role</option>
                     <option value="Student">Student</option>
                     <option value="Full-time learner">Full-time learner</option>
@@ -41,34 +41,34 @@
                 </select>
             </div>
             <div class="form__recommendation">
-                <label class="tag--form" tabindex="0">Would you recommend FreeCodeCamp to a friend?</label>
-                <label class="flex" for="definitely" tabindex="0">
-                    <input id="definitely" type="radio" value="Definitely" name="recommendation">
-                    <p class="margin-left">Definitely</p>
+                <label class="tag--form" tabindex="0">Would you recommend FreeCodeCamp to a friend? (check one option)</label>
+                <label class="flex" for="definitely" tabindex="0" aria-label="Use the space button to check or uncheck an option">
+                    <input id="definitely" type="radio" value="Definitely" name="recommendation" aria-label="check this radio button">
+                    <p class="margin-left" tabindex="0" aria-label="definitely">Definitely</p>
                 </label>
-                <label class="flex" for="maybe" tabindex="0">
-                    <input id="maybe" type="radio" value="Maybe" name="recommendation">
-                    <p class="margin-left">Maybe</p>
+                <label class="flex" for="maybe">
+                    <input id="maybe" type="radio" value="Maybe" name="recommendation" aria-label="check this radio button">
+                    <p class="margin-left" tabindex="0" aria-label="maybe">Maybe</p>
                 </label>
-                <label class="flex" for="not-sure" tabindex="0">
-                    <input id="not-sure" type="radio" value="Not sure" name="recommendation">
-                    <p class="margin-left">Not Sure</p>
+                <label class="flex" for="not-sure">
+                    <input id="not-sure" type="radio" value="Not sure" name="recommendation" aria-label="check this radio button">
+                    <p class="margin-left" tabindex="0" aria-label="not sure">Not Sure</p>
                 </label>
             </div>
             <div class="form__preference">
                 <label class="tag--form" for="preference" tabindex="0">What is your favorite feature of FreeCodeCamp?</label>
-                <select id="preference" class="selection" name="preference" size="1" required>
+                <select id="preference" class="selection" name="preference" size="1" aria-label="Select one option with you up and down row buttons" required>
                     <option disabled selected value>Select an option</option>
                     <option value="Challenges">Challenges</option>
                     <option value="Projects">Projects</option>
-                    <option value="Community">Comunity</option>
+                    <option value="Community">Community</option>
                     <option value="open Source">Open Source</option>
                 </select>
             </div>
             <div class="form__improvement">
                 <label class="tag--form" tabindex="0">What would you like to see improved? (check all that apply)</label>
-                <label class="flex" for="front-end-projects">
-                    <input id="front-end-projects" type="checkbox" value="Front-end Projects" name="front-end-projects">
+                <label class="flex" for="front-end-projects" tabindex="0" aria-label="Use the space button to check or uncheck an option">
+                    <input id="front-end-projects" type="checkbox" value="Front-end Projects" name="front-end-projects" aria-label="Front-end projects">
                     <p class="margin-left">Front-end Projects</p>
                 </label>
                 <label class="flex" for="back-end-projects">
@@ -113,11 +113,14 @@
                 </label>
             </div>
             <div class="form__suggestion">
-                <label class="tag--form" for="suggestion">Any comments or suggestions?</label>
-                <textarea id="suggestion" class="field--form field--textarea" name="suggestion" rows="10" cols="25"></textarea>
+                <label class="tag--form" for="suggestion" tabindex="0">Do you have any comments or suggestions?</label>
+                <textarea id="suggestion" class="field--form field--textarea" name="suggestion" rows="10" cols="25" aria-label="Type your comments or suggestion here"></textarea>
             </div>
             <button class="button--form" type="submit">Submit</button>
         </form>
     </main>
+    <footer id="footer" class="footer">
+        <p class="footer__info" tabindex="0" aria-label="made by Diego Rubio"> made by <a href="" target="_blank" tabindex="0" aria-label="Link to go to the Github profile of Diego Rubio">Diego Rubio</a></p>
+    </footer>
 </body>
 </html>
